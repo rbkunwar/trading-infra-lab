@@ -2,6 +2,31 @@
 
 Each pillar is built while studying the matching chapters of *How Linux Works*. Every change gets **before/after evidence** (command output or measurements).
 
+## Build order: what each chapter unlocks
+
+I only build what I've already learned. Each chapter ends with its project task.
+
+| After chapter | Project task | Pillar |
+|---|---|---|
+| ✅ 1 The Big Picture | Architecture, node roles, first 2 incident reports | 8 |
+| 2 Basic Commands | Folder layout, `feed` service user + `traders` group, permissions, audit who has sudo | 1 |
+| 3 Devices | Map devices on both nodes; check the Pi's USB drive (INC-002) | 2 |
+| 4 Disks & Filesystems | Data directory/volume, mount options, swap review, disk-full check | 2 |
+| 5 Kernel Boot | Read boot logs, kernel parameters; prepare CPU isolation for tuning | 5 |
+| 6 User Space Starts | **Fix INC-001**; feed handler as a proper systemd service | 3 |
+| 7 Logging, Time, Jobs, Users | Log retention (INC-002), **chrony time sync**, scheduled reports with timers | 4, 7 |
+| 8 Processes & Resources | Baseline latency; CPU pinning, priorities, cgroup limits | 5, 7 |
+| 9 Network Config | Latency to exchanges, routing, DNS, firewall rules | 6, 1 |
+| 10 Network Services | SSH hardening, fail2ban, health endpoint, packet capture | 1, 6 |
+| 11 Shell Scripts | Deploy, health-check, and daily-report scripts | 8 |
+| 12 File Transfer | rsync backups VM → Pi + restore drill; WireGuard tunnel | 8, 6 |
+| 13 User Environments | Clean shell setup for an ops user | 1 |
+| 15–16 Dev Tools & Compiling | Build a small C latency tool with `make` | 5 |
+| 17 Virtualization | Containerise the feed handler; compare VM vs container | 8 |
+| Beyond the book | Ansible to rebuild both nodes, Prometheus/Grafana, alerting | 7, 8 |
+
+Chapter 14 (desktop & printing) has no project task: servers don't need it.
+
 ## 1. Access & security (Ch 2, 7, 10)
 - [ ] Least-privilege service users and groups (no services running as root unless needed)
 - [ ] File permissions on project, data, and log directories
