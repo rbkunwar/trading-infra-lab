@@ -27,7 +27,7 @@ A two-node lab where I build, secure, tune, monitor and operate **trading-style 
 
 | # | Pillar | Status |
 |---|---|---|
-| 1 | Access & security | 🟡 baseline captured ([docs/security-baseline.md](docs/security-baseline.md)) |
+| 1 | Access & security | 🟡 baseline captured ([docs/security-baseline.md](docs/security-baseline.md)); roles, service user and permissions on both nodes ([docs/ch02-users-groups-permissions.md](docs/ch02-users-groups-permissions.md)) |
 | 2 | Storage | ⏳ planned |
 | 3 | Services & reliability | ⏳ planned |
 | 4 | Time sync | ⏳ planned |

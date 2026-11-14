@@ -9,7 +9,7 @@ I only build what I've already learned. Each chapter ends with its project task.
 | After chapter | Project task | Pillar |
 |---|---|---|
 | ✅ 1 The Big Picture | Architecture, node roles, first 2 incident reports | 8 |
-| 2 Basic Commands | Folder layout, `feed` service user + `traders` group, permissions, audit who has sudo | 1 |
+| ✅ 2 Basic Commands | Folder layout, `feed` service user + `traders` group, permissions, audit who has sudo ([write-up](ch02-users-groups-permissions.md)) | 1 |
 | 3 Devices | Map devices on both nodes; check the Pi's USB drive (INC-002) | 2 |
 | 4 Disks & Filesystems | Data directory/volume, mount options, swap review, disk-full check | 2 |
 | 5 Kernel Boot | Read boot logs, kernel parameters; prepare CPU isolation for tuning | 5 |
